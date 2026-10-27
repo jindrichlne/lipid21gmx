@@ -1,0 +1,13 @@
+; Atom types of TIP3P water and ions for the standalone Lipid21 force field
+; converted from $AMBERHOME/dat/leap/parm/{frcmod.tip3p,frcmod.ions1lm_126_tip3p,frcmod.ionsjc_tip3p,frcmod.ions234lm_126_tip3p} (load order of leaprc.water.tip3p)
+; (same type names and values as amber14sb.ff/amber19sb.ff in GROMACS 2026)
+
+[ atomtypes ]
+; name        at.num      mass   charge  ptype           sigma         epsilon
+  OW_tip3p          8      16.0   0.0000   A    0.315075240658  0.635968000000
+  HW_tip3p          1     1.008   0.0000   A    0.000000000000  0.000000000000
+  Na+_tip3p        11     22.99   0.0000   A    0.243928069027  0.365846031200
+  K+_tip3p         19      39.1   0.0000   A    0.303796462886  0.810369253600
+  Cl-_tip3p        17     35.45   0.0000   A    0.447765695737  0.148912744000
+  Mg2+_tip3p       12    24.305   0.0000   A    0.242324451334  0.042686716080
+  Ca2+_tip3p       20     40.08   0.0000   A    0.293818397243  0.443205680800

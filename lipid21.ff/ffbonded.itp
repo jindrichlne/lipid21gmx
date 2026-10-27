@@ -1,0 +1,296 @@
+; Lipid21 bonded parameters (from lipid21.dat)
+; bonds:     kb = 2*K*4.184*100 kJ/mol/nm^2, b0 = r0/10 nm
+; angles:    kth = 2*K*4.184 kJ/mol/rad^2
+; dihedrals: k = (PK/IDIVF)*4.184 kJ/mol; function 9 = Amber Fourier series,
+;            function 4 = Amber improper (central atom third)
+
+[ bondtypes ]
+; i    j   func      b0          kb
+  cD   cC    1   0.1508      274721.44
+  cD   cD    1   0.1535      253634.08
+  cA   cD    1   0.1535      253634.08
+  cC   oC    1   0.1214      542246.4
+  oS   cC    1   0.1343      344175.84
+  nA   cA    1   0.1499      245684.48
+  cA   cA    1   0.1535      253634.08
+  pA   oT    1   0.161       192464.0
+  pA   oP    1   0.148       439320.0
+  cA   oT    1   0.1439      252295.2
+  cA   oS    1   0.1439      252295.2
+  cA   hA    1   0.1092      282252.64
+  cD   hL    1   0.1092      282252.64
+  cA   hX    1   0.1091      283424.16
+  cA   hE    1   0.1093      281081.12
+  cB   cB    1   0.1324      493460.96
+  cB   cD    1   0.1508      274721.44
+  cB   cA    1   0.1508      274721.44
+  cB   hB    1   0.1087      288110.24
+  cA   cC    1   0.1508      274721.44
+  cC   oO    1   0.1214      542246.4
+  hN   nA    1   0.1033      308779.2
+  cA   oH    1   0.1426      262838.88
+  hO   oH    1   0.0974      309281.28
+  oH   pA    1   0.1625      268780.16
+  cC   nN    1   0.1345      400157.76
+  cA   nN    1   0.146       276646.08
+  hN   nN    1   0.1009      343255.36
+
+[ angletypes ]
+; i    j    k   func    th0        cth
+  cD   cD   cD    1   112.05     394.9696
+  cD   cC   oC    1   123.11     569.27504
+  cD   cC   oS    1   111.96     579.56768
+  cD   cD   cC    1   110.53     533.79472
+  hA   cA   hA    1   108.35     329.95024
+  cA   cA   hA    1   110.05     388.02416
+  cD   cA   hA    1   110.05     388.02416
+  cA   cD   hL    1   110.05     388.02416
+  cA   cA   cA    1   110.63     528.94128
+  cD   cD   cA    1   110.63     528.94128
+  cA   cA   cD    1   110.63     528.94128
+  cA   cA   cB    1   111.44     531.61904
+  cA   cB   cB    1   123.42     538.31344
+  cA   cB   cA    1   116.52     524.6736
+  cA   cB   hB    1   117.3      382.08288
+  cB   cA   hA    1   110.49     393.54704
+  oS   cC   oC    1   123.33     635.38224
+  oP   pA   oP    1   119.9      1171.52
+  cA   nA   cA    1   110.64     525.84512
+  cA   cA   nA    1   114.32     539.3176
+  oT   pA   oP    1   108.23     836.8
+  oT   cA   cA    1   108.42     567.18304
+  pA   oT   cA    1   120.5      836.8
+  oT   pA   oT    1   102.6      753.12
+  cA   cA   oS    1   108.42     567.18304
+  cA   oS   cC    1   115.14     532.45584
+  hL   cD   cC    1   109.68     394.9696
+  hL   cD   hL    1   108.35     329.95024
+  hL   cD   cD    1   110.05     388.02416
+  hX   cA   hX    1   110.74     326.68672
+  nA   cA   hX    1   107.91     410.19936
+  hE   cA   cA    1   110.07     387.94048
+  hE   cA   hE    1   109.55     327.85824
+  cA   cA   hX    1   111.74     385.09536
+  oT   cA   hE    1   108.82     425.42912
+  hE   cA   oS    1   108.82     425.42912
+  cB   cB   cD    1   123.42     538.31344
+  cB   cD   hL    1   110.49     393.54704
+  cB   cD   cD    1   111.44     531.61904
+  cB   cB   hB    1   120.94     418.73472
+  cD   cB   hB    1   117.3      382.08288
+  cA   cC   oO    1   123.11     569.27504
+  oO   cC   oO    1   130.38     654.12656
+  cA   nA   hN    1   110.11     386.51792
+  hN   nA   hN    1   108.11     339.07136
+  cA   cA   cC    1   110.53     533.79472
+  cC   cA   nA    1   114.21     544.50576
+  cC   cA   hX    1   109.54     395.22064
+  hE   cA   oH    1   109.88     426.51696
+  cA   oH   hO    1   108.16     394.04912
+  cA   cA   oH    1   109.43     566.68096
+  hO   oH   pA    1   110.14     467.60384
+  oH   pA   oT    1   102.37     375.80688
+  oP   pA   oH    1   115.26     366.43472
+  cB   cD   cB    1   112.08     534.96624
+  cA   cA   nN    1   112.13     551.0328
+  cA   nN   cC    1   121.35     534.88256
+  cA   nN   hN    1   116.78     385.26272
+  cC   nN   hN    1   118.46     411.78928
+  cD   cC   nN    1   115.15     567.85248
+  hE   cA   nN    1   109.32     416.89376
+  nN   cC   oC    1   122.03     634.54544
+  cB   cA   oH    1   110.21     570.53024
+  cB   cA   hE    1   110.46     393.54704
+
+[ dihedraltypes ]
+; proper torsions
+; i    j    k    l   func   phase      kd        pn
+  cD   cD   cD   cD    9      0.000   0.4184        5   ; SCNB=6 (explicit [ pairs ] parameters in the molecule topologies)
+  cD   cD   cD   cD    9      0.000   0.4184        4
+  cD   cD   cD   cD    9      0.000   1.2552        3
+  cD   cD   cD   cD    9      0.000   0.4184        2
+  cD   cD   cD   cD    9      0.000   0.4184        1
+  cA   oT   pA   oP    9      0.000   0.0           5
+  cA   oT   pA   oP    9      0.000   0.0           4
+  cA   oT   pA   oP    9      0.000   0.0           3
+  cA   oT   pA   oP    9      0.000   0.8368        2
+  cA   oT   pA   oP    9      0.000   0.0           1
+  hE   cA   oT   pA    9      0.000   0.0           5
+  hE   cA   oT   pA    9      0.000   0.0           4
+  hE   cA   oT   pA    9      0.000   1.602472      3
+  hE   cA   oT   pA    9      0.000   0.0           2
+  hE   cA   oT   pA    9      0.000   0.0           1
+  oS   cA   cA   cA    9      0.000   0.0           5
+  oS   cA   cA   cA    9      0.000   0.0           4
+  oS   cA   cA   cA    9      0.000   0.0           3
+  oS   cA   cA   cA    9      0.000   0.0           2
+  oS   cA   cA   cA    9      0.000   0.0           1
+  oT   cA   cA   oS    9      0.000   0.0           5
+  oT   cA   cA   oS    9      0.000   0.0           4
+  oT   cA   cA   oS    9      0.000   0.0           3
+  oT   cA   cA   oS    9      0.000   0.0           2
+  oT   cA   cA   oS    9      0.000   0.0           1
+  cC   oS   cA   cA    9    300.000   -0.8368       3
+  cC   oS   cA   cA    9    240.000   -1.2552       2
+  cC   oS   cA   cA    9      0.000   -0.4184       1
+  oS   cA   cA   oS    9      0.000   4.184         3
+  oS   cA   cA   oS    9      0.000   1.2552        2
+  oS   cA   cA   oS    9    180.000   -0.4184       1
+  cA   oT   pA   oT    9      0.000   2.5104        3
+  cA   oT   pA   oT    9      0.000   9.6232        2
+  cA   cA   oT   pA    9      0.000   0.0           3
+  cA   cA   oT   pA    9    180.000   -3.3472       2
+  cA   cA   cA   oT    9     60.000   1.6736        3
+  cA   cA   cA   oT    9    120.000   0.8368        2
+  cA   cA   cA   oT    9    180.000   3.3472        1
+  nA   cA   cA   oT    9      0.000   4.184         3
+  cD   cB   cB   cD    9      0.000   0.0           5
+  cD   cB   cB   cD    9      0.000   0.0           4
+  cD   cB   cB   cD    9      0.000   2.5104        3
+  cD   cB   cB   cD    9    180.000   13.8072       2
+  cD   cB   cB   cD    9    180.000   7.1128        1
+  cA   cB   cB   cA    9    180.000   27.8236       2
+  cA   cB   cB   cA    9    180.000   7.9496        1
+  cD   cB   cB   cA    9    180.000   27.8236       2
+  cD   cB   cB   cA    9    180.000   7.9496        1
+  cB   cB   cD   cD    9    180.000   0.8368        5
+  cB   cB   cD   cD    9    180.000   0.8368        4
+  cB   cB   cD   cD    9    180.000   1.6736        3
+  cB   cB   cD   cD    9    180.000   1.6736        2
+  cB   cB   cD   cD    9      0.000   2.5104        1
+  cA   cA   cB   cB    9      0.000   0.0           2
+  cB   cD   cD   cD    9      0.000   0.4184        5
+  cB   cD   cD   cD    9      0.000   0.0           4
+  cB   cD   cD   cD    9      0.000   2.092         3
+  cB   cD   cD   cD    9      0.000   0.0           2
+  cB   cD   cD   cD    9      0.000   0.0           1
+  cB   cA   cA   cA    9      0.000   0.0           5
+  cB   cA   cA   cA    9      0.000   0.0           4
+  cB   cA   cA   cA    9      0.000   0.0           3
+  cB   cA   cA   cA    9      0.000   0.0           2
+  cB   cA   cA   cA    9      0.000   0.0           1
+  cD   cD   cC   oC    9    180.000   0.0           2
+  cD   cD   cC   oS    9    180.000   0.0           2
+  cD   cC   oS   cA    9    180.000   11.2968       2
+  cC   cD   cD   cD    9      0.000   0.652704      3
+  cA   cA   nA   cA    9      0.000   0.652704      3
+  cA   oS   cC   oC    9    180.000   11.2968       2
+  cA   oS   cC   oC    9    180.000   5.8576        1
+  hL   cD   cC   oC    9    180.000   0.33472       3
+  hL   cD   cC   oC    9      0.000   3.3472        1
+  hL   cD   cC   oS    9    180.000   0.0           2
+  hL   cD   cD   hL    9      0.000   0.6276        3
+  hL   cD   cD   cC    9      0.000   0.652704      3
+  hL   cD   cD   cD    9      0.000   0.66944       3
+  hX   cA   nA   cA    9      0.000   0.652704      3
+  hE   cA   cA   hX    9      0.000   0.652704      3
+  hE   cA   cA   nA    9      0.000   0.652704      3
+  oT   cA   cA   hX    9      0.000   0.652704      3
+  hE   cA   cA   oS    9      0.000   0.0           3
+  hE   cA   cA   oS    9      0.000   1.046         1
+  hE   cA   cA   hE    9      0.000   0.652704      3
+  hE   cA   cA   oT    9      0.000   0.0           3
+  hE   cA   cA   oT    9      0.000   1.046         1
+  hE   cA   oS   cC    9      0.000   1.602472      3
+  hE   cA   cA   cA    9      0.000   0.652704      3
+  cD   cD   cB   hB    9      0.000   0.0           2
+  hB   cB   cD   hL    9      0.000   0.0           2
+  cB   cD   cD   hL    9      0.000   0.6510304     3
+  cD   cB   cB   hB    9    180.000   27.8236       2
+  cB   cB   cD   hL    9    180.000   1.58992       3
+  cB   cB   cD   hL    9      0.000   4.8116        1
+  hB   cB   cB   hB    9    180.000   27.8236       2
+  cC   cA   nA   hN    9      0.000   0.6510304     3
+  nA   cA   cC   oO    9    180.000   0.0           2
+  hN   nA   cA   hX    9      0.000   0.6510304     3
+  hX   cA   cC   oO    9    180.000   0.0           2
+  cC   cA   cA   hE    9      0.000   0.6510304     3
+  cA   cA   nA   hN    9      0.000   0.6510304     3
+  cA   cA   cC   oO    9    180.000   0.0           2
+  cC   cA   cA   oT    9      0.000   0.6510304     3
+  hE   cA   oH   hO    9      0.000   2.092         3
+  cA   cA   oH   hO    9      0.000   0.66944       3
+  cA   cA   oH   hO    9      0.000   1.046         1
+  hE   cA   cA   oH    9      0.000   0.0           3
+  hE   cA   cA   oH    9      0.000   1.046         1
+  cA   cA   cA   oH    9      0.000   0.6510304     3
+  oH   cA   cA   oT    9      0.000   0.602496      3
+  oH   cA   cA   oT    9      0.000   4.9162        2
+  oH   cA   cA   oH    9      0.000   0.602496      3
+  oH   cA   cA   oH    9      0.000   4.9162        2
+  cA   oT   pA   oH    9      0.000   1.046         3
+  cA   oT   pA   oH    9      0.000   5.0208        2
+  hO   oH   pA   oT    9      0.000   2.2313272     3
+  hO   oH   pA   oP    9      0.000   2.2313272     3
+  cB   cB   cD   cB    9      0.000   0.0           5
+  cB   cB   cD   cB    9      0.000   0.0           4
+  cB   cB   cD   cB    9      0.000   0.0           3
+  cB   cB   cD   cB    9      0.000   0.0           2
+  cB   cB   cD   cB    9      0.000   0.0           1
+  cB   cD   cB   hB    9      0.000   0.0           2
+  cA   cA   cA   cA    9      0.000   0.75312       3
+  cA   cA   cA   cA    9    180.000   1.046         2
+  cA   cA   cA   cA    9    180.000   0.8368        1
+  cA   cA   cA   cD    9      0.000   0.75312       3
+  cA   cA   cA   cD    9    180.000   1.046         2
+  cA   cA   cA   cD    9    180.000   0.8368        1
+  cA   cA   cD   cD    9      0.000   0.75312       3
+  cA   cA   cD   cD    9    180.000   1.046         2
+  cA   cA   cD   cD    9    180.000   0.8368        1
+  cA   cD   cD   cD    9      0.000   0.75312       3
+  cA   cD   cD   cD    9    180.000   1.046         2
+  cA   cD   cD   cD    9    180.000   0.8368        1
+  cA   cA   cA   hA    9      0.000   0.66944       3
+  cD   cA   cA   hA    9      0.000   0.66944       3
+  cA   cA   cD   hL    9      0.000   0.66944       3
+  hA   cA   cA   hA    9      0.000   0.6276        3
+  hA   cA   cD   hL    9      0.000   0.6276        3
+  cD   cD   cA   hA    9      0.000   0.66944       3
+  cA   cD   cD   hL    9      0.000   0.66944       3
+  cA   cA   cB   cA    9      0.000   0.0           2
+  cA   cB   cB   hB    9    180.000   27.8236       2
+  hA   cA   cB   hB    9      0.000   0.0           2
+  cA   cA   cB   hB    9      0.000   0.0           2
+  cB   cA   cA   hA    9      0.000   0.6510304     3
+  cB   cA   cA   oH    9      0.000   0.6510304     3
+  cB   cB   cA   hA    9    180.000   1.58992       3
+  cB   cB   cA   hA    9      0.000   4.8116        1
+  hA   cA   cA   oH    9      0.000   0.0           3
+  hA   cA   cA   oH    9      0.000   1.046         1
+  cA   cB   cA   hA    9      0.000   0.0           2
+  hA   cA   cA   hE    9      0.000   0.6510304     3
+  cB   cA   cA   hE    9      0.000   0.6510304     3
+  cA   cA   nN   cC    9      0.000   0.0           2
+  cA   cA   nN   hN    9      0.000   0.0           2
+  cA   nN   cC   cD    9    180.000   10.46         2
+  cA   nN   cC   oC    9    180.000   10.46         2
+  cB   cA   cA   nN    9      0.000   10.0416       3
+  cB   cA   cA   nN    9    180.000   5.4392        2
+  cB   cA   cA   nN    9     60.000   1.6736        1
+  cC   nN   cA   hE    9      0.000   0.0           2
+  cD   cC   nN   hN    9    180.000   10.46         2
+  cD   cD   cC   nN    9    180.000   0.0           2
+  hE   cA   cA   nN    9      0.000   0.652704      3
+  hE   cA   nN   hN    9      0.000   0.0           2
+  hL   cD   cC   nN    9      0.000   0.0           2
+  hN   nN   cC   oC    9    180.000   10.46         2
+  nN   cA   cA   oH    9      0.000   0.652704      3
+  nN   cA   cA   oT    9      0.000   0.0           3
+  cB   cA   oH   hO    9      0.000   0.66944       3
+  cB   cA   oH   hO    9      0.000   1.046         1
+  cB   cB   cA   oH    9      0.000   0.0           2
+  hE   cA   cB   cB    9      0.000   0.0           2
+  hE   cA   cB   hB    9      0.000   0.0           2
+  oH   cA   cB   hB    9      0.000   0.0           2
+  cC   cD   cD   cB    9      0.000   0.6510304     3
+
+[ dihedraltypes ]
+; improper torsions
+; i    j    k    l   func   phase      kd        pn
+  cA   cA   cB   cB    4    180.000   4.6024        2
+  cA   cB   cB   hB    4    180.000   4.6024        2
+  cA   cC   nN   hN    4    180.000   4.6024        2
+  cA   oO   cC   oO    4    180.000   4.6024        2
+  cB   cD   cB   hB    4    180.000   4.6024        2
+  cD   nN   cC   oC    4    180.000   4.6024        2
+  cD   oC   cC   oS    4    180.000   43.932        2

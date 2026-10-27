@@ -1,0 +1,44 @@
+; Ions for TIP3P water as loaded by Amber leaprc.water.tip3p
+; converted from $AMBERHOME/dat/leap/parm/{frcmod.tip3p,frcmod.ions1lm_126_tip3p,frcmod.ionsjc_tip3p,frcmod.ions234lm_126_tip3p} (load order of leaprc.water.tip3p)
+; Na+, K+, Cl-: Joung & Cheatham, J. Phys. Chem. B 112, 9020 (2008)
+; Mg2+, Ca2+:  Li, Roberts, Chakravorty & Merz, JCTC 9, 2733 (2013), 12-6 CM set
+
+[ moleculetype ]
+; molname  nrexcl
+NA         1
+
+[ atoms ]
+;  id  at type     res nr  res name  at name  cg nr  charge     mass
+    1  Na+_tip3p    1       NA        NA       1      +1.000000  22.99
+
+[ moleculetype ]
+; molname  nrexcl
+K          1
+
+[ atoms ]
+;  id  at type     res nr  res name  at name  cg nr  charge     mass
+    1  K+_tip3p     1       K         K        1      +1.000000  39.1
+
+[ moleculetype ]
+; molname  nrexcl
+CL         1
+
+[ atoms ]
+;  id  at type     res nr  res name  at name  cg nr  charge     mass
+    1  Cl-_tip3p    1       CL        CL       1      -1.000000  35.45
+
+[ moleculetype ]
+; molname  nrexcl
+MG         1
+
+[ atoms ]
+;  id  at type     res nr  res name  at name  cg nr  charge     mass
+    1  Mg2+_tip3p   1       MG        MG       1      +2.000000  24.305
+
+[ moleculetype ]
+; molname  nrexcl
+CA         1
+
+[ atoms ]
+;  id  at type     res nr  res name  at name  cg nr  charge     mass
+    1  Ca2+_tip3p   1       CA        CA       1      +2.000000  40.08

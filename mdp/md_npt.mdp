@@ -1,0 +1,47 @@
+; NPT production for Lipid21 bilayers, mirroring the Amber Lipid21 protocol
+; (lipid21/prod.in: cut = 10 A, ntc = 2, Langevin gamma_ln = 1/ps, 303 K,
+;  ntp = 3 with csurften = 3, gamma_ten = 0, i.e. tensionless semi-isotropic).
+; No long-range dispersion correction for bilayers (DispCorr = no).
+; Note: pmemd's default vdwmeth = 1 adds a continuum dispersion correction,
+; so prod.in runs in Amber are not identical in this respect.
+
+integrator              = sd            ; Langevin dynamics as in Amber (ntt = 3)
+dt                      = 0.002
+nsteps                  = 50000000      ; 100 ns
+tinit                   = 0
+nstxout-compressed      = 5000          ; 10 ps
+nstenergy               = 5000
+nstlog                  = 5000
+nstcalcenergy           = 100
+
+; Langevin thermostat: tau-t = 1/gamma_ln
+tc-grps                 = System
+tau-t                   = 1.0
+ref-t                   = 303           ; set for your lipid (above its main transition)
+
+; tensionless semi-isotropic pressure coupling at 1 bar
+pcoupl                  = C-rescale
+pcoupltype              = semiisotropic
+tau-p                   = 5.0
+ref-p                   = 1.0 1.0
+compressibility         = 4.5e-5 4.5e-5
+
+; interactions (Amber: cut = 10 A, PME, plain LJ truncation)
+cutoff-scheme           = Verlet
+coulombtype             = PME
+rcoulomb                = 1.0
+fourier-spacing         = 0.10          ; ~ Amber default grid
+pme-order               = 4
+vdwtype                 = Cut-off
+vdw-modifier            = Potential-shift ; same forces as plain truncation; only the energy is shifted
+rvdw                    = 1.0
+DispCorr                = no
+
+; bonds to hydrogen constrained (Amber ntc = 2, ntf = 2); TIP3P rigid via SETTLE
+constraints             = h-bonds
+constraint-algorithm    = LINCS
+
+continuation            = no
+gen-vel                 = yes
+gen-temp                = 303
+gen-seed                = -1

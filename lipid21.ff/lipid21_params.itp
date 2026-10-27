@@ -1,0 +1,12 @@
+; AMBER Lipid21 atom types and bonded parameters -- add-on entry point
+;
+; Include this file right after the forcefield.itp of an Amber protein force
+; field that uses the standard Amber [ defaults ] (1 2 yes 0.5 0.8333), e.g.
+;     #include "amber19sb.ff/forcefield.itp"
+;     #include "lipid21.ff/lipid21_params.itp"
+; Lipid21 atom types (cA, hL, oP, ...) do not clash with the protein types.
+
+#define _FF_AMBER_LIPID21
+
+#include "ffnonbonded.itp"
+#include "ffbonded.itp"
